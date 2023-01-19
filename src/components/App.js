@@ -14,9 +14,14 @@ class App extends React.Component {
     this.handleClick = this.handleClick.bind(this);
 
   }
+  
+  componentDidMount(){
+  console.log("mounted");
+  }
 
+  
   render() {
-    console.log("rendered")
+    console.log('rendered')
     return (
       <div id="main">
           <div id="count">{this.state.count}</div>
